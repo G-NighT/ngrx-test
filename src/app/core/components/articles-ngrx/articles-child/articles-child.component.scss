@@ -1,0 +1,12 @@
+.amaka-atricle {
+    .amaka-atricle__title {
+        cursor: pointer;
+        &:hover {
+            color: #2a8cc5;
+        }
+    }
+    .amaka-atricle__img {
+        cursor: pointer;
+        max-height: 10rem;
+    }
+}

@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/scss/bootstrap';
+html {
+    position: relative!important;
+    min-height: 100%!important;
+}
+
+body {
+    background-color: #cecece;
+    margin-bottom: 1.5rem!important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

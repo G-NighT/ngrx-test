@@ -1,0 +1,54 @@
+.header {
+    .nav {
+        .nav-link {
+            color: #ffffff;
+            font-weight: 600;
+            transition: color linear 0.2s;
+            border-bottom: 1px solid rgba(0, 0, 0, 0);
+            &:hover {
+                color: #dbdbdb;
+            }
+        }
+        &.sentiment-nav {
+            .nav-item {
+                .nav-link {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+                &:not(:last-child) {
+                    .nav-link {
+                        margin-right: 0rem;
+                    }
+                }
+            }
+            .nav-link {
+                &.active {
+                    color: #2a8cc5;
+                    border-bottom: 2px solid rgb(26, 56, 207);
+                }
+                &.active-sub {
+                    color: #2a8cc5;
+                    background: #e3edf8;
+                }
+            }
+        }
+    }
+    .nav-item {
+        ul {
+            display: none;
+            left: 0;
+            top: 100%;
+            z-index: 11;
+        }
+        &:hover {
+            ul {
+                display: block;
+            }
+        }
+        .profile-image {
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

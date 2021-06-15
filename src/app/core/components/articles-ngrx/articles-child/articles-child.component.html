@@ -1,0 +1,11 @@
+<mat-card *ngFor="let article of articles" class="amaka-atricle text-center pb-3 mb-3">
+    <mat-card-header class="justify-content-center">
+        <mat-card-title class="amaka-atricle__title">{{article.title}}</mat-card-title>
+    </mat-card-header>
+    <ng-container *ngFor="let file of storageFiles">
+        <img class="amaka-atricle__img" *ngIf="file.id == article.previewImage" [src]="file.filePath" />
+    </ng-container>
+    <mat-card-content class="pt-2">
+        <p>{{article.annotation}}</p>
+    </mat-card-content>
+</mat-card>

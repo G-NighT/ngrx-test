@@ -1,0 +1,16 @@
+<section class="dashboard bg-gray-100 min-vh-100 py-3">
+    <div class="container-fluid">
+        <div class="bg-light rounded mb-3">
+            <div class="p-3 border-bottom border-gray-200 font-weight-bold">
+
+                <div class="amaka-atricle text-center pb-3" *ngFor="let article of articles">
+                    <h5 class="amaka-atricle__title">{{article.title}}</h5>
+                    <ng-container *ngFor="let file of storageFiles">
+                        <img class="amaka-atricle__img" *ngIf="file.id == article.previewImage" [src]="file.filePath" />
+                    </ng-container>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
